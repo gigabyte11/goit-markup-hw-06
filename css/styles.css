@@ -1,0 +1,750 @@
+/*Стилізація верхнього меню секції HEADER*/
+/*Обнуление отступов*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+/*Обнуление отступов*/
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*---Секція HEADER------*/
+.header-container
+{
+    display: flex;
+    align-items: center;
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+.navigation
+{
+    display: flex;
+    align-items: center;
+}
+.menu
+{
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    margin-right: 93px;
+}
+
+/*Логотип WebStudio*/
+.logo{
+    font-family: Raleway; 
+    font-style: normal; 
+    font-weight: bold; s
+    font-size: 26px; 
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none
+    text-shadow: 0 4 4
+    rgba(0,0,0,0.25);
+    text-decoration: none /*прибирає підкреслення*/
+    }
+.logo-web
+{
+    color:#2196f3
+}
+.logo-s
+{
+    color:black
+}
+/*Стилізація блокім меню: Студія,Потфоліо...*/
+.list-menu:not(:last-child){
+    margin-right: 50px;
+}
+
+.menu-link.current{
+    color: #2196f3;
+}
+.menu-link{
+    position: relative;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.14; 
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom:32px;
+}
+.menu-link.current::after{/*підкреслення активної сторінки*/
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    top: 76px;
+    display: block;
+    background: #2196F3;
+    border-radius: 2px;
+
+}
+
+/*Стилізація блоків меню: tел, Mайл*/
+.adress
+{
+    display: flex;
+    align-items: center;
+}
+.list-adress
+{
+    list-style: none; /*прибирає точки в списку*/
+    margin-right: auto;
+}
+.mail-link{
+    display: flex;
+    align-items: center;
+    margin-left: 331px;
+    
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.14; 
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    transition: color 250ms linear;
+}
+.tel-link{   
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.14; 
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    transition: color 250ms linear;
+}
+.icon-list-adress{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.menu-link:hover,
+.menu-link:focus
+{
+    color: #2196f3;
+}
+.icon-list-adress:hover,
+.icon-list-adress:focus
+{
+    color: currentColor #2196f3;
+}
+.mail-link:hover,
+.mail-link:focus
+{
+    color: #2196f3;
+}
+.tel-link:hover,
+.tel-link:focus
+{
+    color: #2196f3;
+}
+
+/*----------------------------------------*/
+/*Стилізація секції HERO*/
+.section-hero
+{   
+    background-image:linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*background-color: #2f303a;*/
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.hero-z
+{
+    align-items: center;
+    width: 696px;
+    margin-left: 245px;
+    margin-bottom: 30px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: 900; 
+    font-size: 44px; 
+    line-height: 1.36;
+    color: #FFFFFF;
+} 
+
+.modal-btn 
+{
+    background: #188ce8;  
+    border-radius:4px ; 
+    padding: 10px 32px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 16px; 
+    line-height: 30px;
+ /* identical to box height, 187% */
+    align-items: center; 
+    text-align: center; 
+    letter-spacing: 0.06em;
+    border-radius:4px ;
+    color: #FFFFFF;
+    cursor: pointer; 
+}
+
+/*Стилізація секцій */
+/*Секція особенності Section-1*/
+.section
+{
+    padding-top: 94px;
+    /* padding-bottom: 94px;*/
+}
+.features-container
+{
+    display: flex;
+    align-items: center;
+}
+.features-menu
+{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+/*.list{
+    width: 270px;
+}
+.list:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+*/
+.features-list
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 14px; 
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F5FA;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+.features-list-icon{
+    background-color: #F4F5FA;
+    border-radius: 0px 4px 4px 0px 0.25;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.hero-list-item
+{
+    margin-right: 30px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 14px; 
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*Секція чим займаємося Section-2*/
+.work{
+    padding-bottom: 94px;
+}
+.section-work
+{
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 36px; 
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.work-section
+{
+    display: flex;
+    align-items: center;
+}
+.work-list:not(:last-child)
+{
+    margin-right: 30px;
+    list-style: none;
+}
+/*Опис вспливаючого вікна на контенті*/
+
+.work-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.overlay-work{
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 00.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background: rgba(47,48,58,0.8);
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+
+/*Секція наша команда Section-3*/
+
+.section3
+{
+    background: #f5f4fa;
+    padding-bottom: 94px;
+}
+.team-work
+{
+    display: flex;
+    align-items: center;
+}
+.team-list/*:not(:last-child)*/{
+    background-color: #FFFFFF;
+    margin-right: 30px;
+    list-style: none;
+    box-shadow: 
+0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item{
+    padding: 30px 0px;
+}
+.section-our-team
+{
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.section-profession
+{
+    
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+}
+.social-network{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-left: -10px;
+}
+.social-network-item{
+    margin-left: 10px;
+}
+.social-network-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    fill: #AFB1B8;
+    border-radius: 50%;
+    transition: color 250ms;
+}
+.social-network-link:hover,
+.social-network-link:focus{
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
+/*--------------------------------------*/
+/*Секция 4*/
+.section4{
+    padding-bottom: 94px;
+}
+.client{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+}
+.client-item{
+    margin-left: 30px;
+}
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: color 250ms, background-color 250ms;
+}
+
+.client-icon:hover,
+.client-icon:focus{
+    fill: #2196F3;
+}
+.client-link:hover,
+.client-link:focus{
+    border-color: #2196F3;
+}
+/*Стилізація секяції footer*/
+
+.footer
+{
+    background: #2F303A;
+    padding-top: 60px;
+    right: 252px;
+}
+.footer-container{
+    display: flex;
+    align-items: baseline;
+    /* width: 1200px;
+    right: 252px;*/
+}
+
+.logo-footer
+{
+    font-family: Raleway; 
+    font-style: normal; 
+    font-weight: bold; s
+    font-size: 26px; 
+    line-height: 1.19;
+/* identical to box height */ 
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none
+    text-shadow: 0 4 4
+    rgba(0,0.0,0.25);
+    text-decoration: none /*прибирає підкреслення*/ 
+}
+.logo-footer-web
+{
+    color:#2196f3
+}
+.logo-footer-s
+{
+    color:white
+}
+.adress-list
+{
+    padding-top:  20px;
+    padding-bottom: 60px;
+}
+.footer-adres-1
+{
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 14px; 
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-adres-2
+{
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 14px; 
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;  
+}
+
+.list:not(:last-child)
+{
+    margin-bottom: 9px;
+    margin-left: 8px;
+}
+
+/*Секція----- Присоединяйтесь-----*/
+.join{
+    margin-left: 70px;
+}
+.join-title{
+    font-family: Roboto;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.join-list{
+    display: flex;
+    justify-self: center;
+    margin-top: 16px;
+    margin-left: -10px;
+}
+.join-item{
+    margin-left: 10px;
+}
+.join-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.1);
+    transition: transform 250ms linear;
+}
+.join-link:hover,
+.join-link:focus{
+    background-color: #2196F3;
+}
+
+/*Модальне вікно*/
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    box-shadow: 
+0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.20);
+}
+/*****Опис стилю кнопки Close****/
+.close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/*portfolio.html*/
+/*Стилізація та сторінки portfolio*/
+
+.modal-btn-portfolio
+{
+    font-family: Roboto; 
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background: #F4F5FA;
+    transition: color 250ms, background-color 250ms;
+}   
+.modal-btn-portfolio:hover,
+.modal-btn-portfolio:focus
+{
+    color: #FFFFFF;
+    background: #2196f3;
+}
+
+.portfolio-list
+{ 
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 18px; 
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.portfolio-link{
+    text-decoration: none;
+    list-style: none;
+}
+.portfolio-list-item
+{   
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    font-family: Roboto; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 16px; 
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    color: #757575;
+}
+.list
+{
+    list-style: none; /*прибирає точки в списку*/
+}
+
+.porfolio-menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;/*робить контент по центру*/
+}
+
+.list-portfolio-menu
+{
+    margin-top: 94px;
+    margin-bottom: 34px;
+    margin-left: 8px;
+}
+.portfolio-content
+{   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+.portfolio-list-content
+{   
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.border-portfolio
+{
+    border: 1px solid;
+    border-color: #eeeeee;    
+
+}
+.portfolio-list-content:hover,
+.portfolio-list-content:focus{
+    box-shadow: 
+0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06), 
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/*Опис вспливаючого вікна на контенті*/
+.portfolio-link{
+    display: block;
+}
+.portfolio-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(33,150,243, 0.9);;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 00.03em;
+    color: #FFFFFF;
+    overflow: auto;
+
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay{
+    transform: translateY(0%);
+}

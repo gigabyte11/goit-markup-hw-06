@@ -190,9 +190,8 @@ img{
     color: var(--color-text);
 }
 .icon-list-adress:hover,
-.icon-list-adress:focus
-{
-    color: currentColor var(--color-text);
+.icon-list-adress:focus{
+    color:currentColor var(--color-text);
 }
 .mail-link:hover,
 .mail-link:focus

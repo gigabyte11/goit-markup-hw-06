@@ -637,10 +637,10 @@ img{
     align-items: center;
     margin-top: 20px;
 }
-.form-message {
+.form-send {
     display: flex;
 }
-.input-form-message {
+.input-form-send {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255,255,255,0.3);
@@ -658,7 +658,7 @@ img{
     letter-spacing: 0.03em;
 
 }
-.input-form-message::placeholder {
+.input-form-send::placeholder {
     display: flex;
     font-family: Roboto;
     padding: 16px 0px;
@@ -669,7 +669,7 @@ img{
     color: rgba(255, 255, 255,0.6 );
     
 }
-.button-massege {
+.button-send {
     display: flex;
     width: 200px;
     height: 50px;
@@ -687,6 +687,11 @@ img{
     line-height: 30px;
     letter-spacing: 0.06em;
     color: var(--text-color-hero);
+}
+
+.send-icon {
+    margin-left: 10px;
+    fill: var(--color-text-footer-logo-s);
 }
 
 /*----------------------------------*/

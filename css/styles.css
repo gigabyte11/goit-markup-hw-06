@@ -691,7 +691,7 @@ img{
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 42px;
-    transition: border-color 250ms linear;
+    transition: background-color 250ms linear;
 }
 .modal-form-input:focus{
     outline:none;
@@ -706,10 +706,42 @@ img{
     transform: translateY(-50%);
     fill:var(--color-text-menu);
     transition: fill 250ms linear;
+    transition: background-color 250ms linear;
 }
 .modal-form-input:focus + .modal-form-icon {
     fill: var(--color-text);
 }
+
+/*TEXTAREA*/
+.modal-form-message{
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+}
+.modal-form-message:focus{
+    outline: none;
+    border-color: var(--background-color-modal-btn-potfolio);
+    transition: background-color 250ms linear;
+}
+/*Обращение только к плейсхолдеру, также установка стилей*/
+.modal-form-message::placeholder{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+/*------------------------------------------*/
+
+/*CHECKBOX*/
+
 
 /*portfolio.html*/
 /*Стилізація та сторінки portfolio*/

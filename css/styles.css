@@ -738,6 +738,7 @@ img{
     cursor: pointer;
     padding: 0;
     box-sizing: border-box;
+    transition: fill 250ms linear;
 }
 .close-btn:hover,
 .close-btn:focus {
